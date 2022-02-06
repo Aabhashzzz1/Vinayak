@@ -44,9 +44,9 @@ const Login = () => {
         let response = await authSignup(signup);
         if(!response) return;
         setOpen(false);
-      }
+    }
 
-      const loginUser = async () => {
+    const loginUser = async () => {
         let response = await authLogin(login);
         console.log("Login btn working");
         //Navigate('/home')
@@ -59,7 +59,7 @@ const Login = () => {
           console.log('Response error');
         }
         
-      }
+    }
     // const loginUser = async () => {
     //     let response = await authenticateLogin(login);
     //     if(!response) {
